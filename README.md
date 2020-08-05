@@ -25,6 +25,24 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 ```
+Steps -
+Create HTML and CSS framework
+Create Start button with an event listener looking for button click
+When event listener detects click start a timer.
+Timer length - 75 seconds (look up setInterval - first agrument is function to run  seconid argument is how often) - 5 questions 
+var count = 75
+setInterval(function(){
+    if(count === 0) {
+        clearInterval()
+    }else{
+        count--
+}
+}, 1000)
+
+Display questions and answers in static htl then replace each code question and answer.
+Add event listener to each answer button for the question to see if selected answer matches the correct answer or not.
+Create logic - If corect add point to score...if incorrect subtract from timer.
+when game is over same initials and score to a scoreboard using local storage.
 
 The following animation demonstrates the application functionality:
 
